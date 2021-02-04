@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+      .image:hover {border: 5px solid #aef3eb;}
+          </style>
   <link rel="stylesheet" href="css/stils.css"> /* <---- ŠIS IR LINKS UZ CSS FAILU */
 </head>
 <body>
@@ -36,16 +39,16 @@
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-    <h3 class="margin" style="font-weight: 700">Kas ir div un kā to pielieto ?</h3>
+    <h3 class="margin" style="font-weight: 700">Kas ir &lt;div&gt; un kā to pielieto ?</h3>
   <img src="images/div.jpg" class="img-responsive margin" style="display:inline" alt="Bird" width="400" height="240">
-  <p style="font-size: 20px">Div ir tags, ko izmanto, lai definētu un rediģētu <br> specifisku html dokumenta sadaļu / konteineri </p>
+  <p style="font-size: 20px">&lt;div&gt; ir tags, ko izmanto, lai definētu un rediģētu <br> specifisku html dokumenta sadaļu / konteineri </p>
   <button style="color: #2f2f2f" onclick="window.location.href='https://www.w3schools.com/tags/tag_div.asp';"> Info par div </button>
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin">Kas ir SPAN un kā to pielieto?</h3>
-  <p> Span ir tags, ko izmanto, lai pievienotu <span style="color: #aef3eb">krāsu </span> teksta daļai </p>
+  <h3 class="margin">Kas ir &lt;span&gt; un kā to pielieto?</h3>
+  <p> &lt;span&gt; ir tags, ko izmanto, lai pievienotu <span style="color: #aef3eb">krāsu </span> teksta daļai </p>
   <a href="#" class="btn btn-default btn-lg">
     <span class="glyphicon glyphicon-search"></span> Search
   </a><br>
@@ -54,23 +57,24 @@
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-5 text-center">
-  <h3 class="margin">Kas ir iekavas un kā tās pielieto?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <button onclick="window.location.href='https://www.w3schools.com/tags/tag_span.asp';"> Info par <> </button>
+    <h3 class="margin">Kas ir &lt; &gt; un kā tos pielieto?</h3>
+  <p> &lt; &gt; Ir simboli, kurus izmanto, lai izsauktu visus tagus html valodā </p>
+  <button onclick="window.location.href='https://www.w3schools.com/html/html_entities.asp';"> Info par &lt;&gt; </button>
 </div>
 
 
 <!-- Fourth Container -->
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
+  <h3 class="margin">CSS triki!</h3><br>
   <div class="row">
     <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        <h1>hover</h1>
+      <p>Izmantojot :hover rīku, objekti reaģē, kad uz tiem novieto kursoru. <br>Info <a href="https://www.w3schools.com/csSref/sel_hover.asp">šeit</a></p>
+      <img src="images/hover.png" class="image" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-4"> 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image" >
     </div>
     <div class="col-sm-4"> 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
