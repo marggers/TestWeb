@@ -9,8 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/stils.css"> 
-  <! ŠIS IR LINKS UZ CSS FAILU>
+  <link rel="stylesheet" href="css/stils.css"> /* <---- ŠIS IR LINKS UZ CSS FAILU */
 </head>
 <body>
 
@@ -27,9 +26,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#">DIV</a></li>
+        <li><a href="#">SPAN</a></li>
+        <li><a href="#">IEKAVAS</a></li>
       </ul>
     </div>
   </div>
@@ -37,21 +36,31 @@
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
+    <h3 class="margin" style="font-weight: 700">Kas ir div un kā to pielieto ?</h3>
+  <img src="images/div.jpg" class="img-responsive margin" style="display:inline" alt="Bird" width="400" height="240">
+  <p style="font-size: 20px">Div ir tags, ko izmanto, lai definētu un rediģētu <br> specifisku html dokumenta sadaļu / konteineri </p>
+  <button style="color: #2f2f2f" onclick="window.location.href='https://www.w3schools.com/tags/tag_div.asp';"> Info par div </button>
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  <h3 class="margin">Kas ir SPAN un kā to pielieto?</h3>
+  <p> Span ir tags, ko izmanto, lai pievienotu <span style="color: #aef3eb">krāsu </span> teksta daļai </p>
   <a href="#" class="btn btn-default btn-lg">
     <span class="glyphicon glyphicon-search"></span> Search
-  </a>
+  </a><br>
+  <button style="color: #2f2f2f" onclick="window.location.href='https://www.w3schools.com/tags/tag_span.asp';"> Info par span </button>
 </div>
 
 <!-- Third Container (Grid) -->
+<div class="container-fluid bg-5 text-center">
+  <h3 class="margin">Kas ir iekavas un kā tās pielieto?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  <button onclick="window.location.href='https://www.w3schools.com/tags/tag_span.asp';"> Info par <> </button>
+</div>
+
+
+<!-- Fourth Container -->
 <div class="container-fluid bg-3 text-center">    
   <h3 class="margin">Where To Find Me?</h3><br>
   <div class="row">
