@@ -10,7 +10,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-      .image:hover {border: 5px solid #aef3eb;}
+      .virsu:hover {border: 7px solid red;}
+      .animacija:hover{
+          animation: animacija1 1s;
+          animation-iteration-count: infinite;
+      }
+      .filtrs:hover{
+          filter: saturate(8)
+      }
+       @keyframes animacija1{
+      0%{border: 7px solid yellow;}
+      50%{border: 5px solid red;}
+      100%{border: 7px solid yellow;}
+  }
           </style>
   <link rel="stylesheet" href="css/stils.css"> /* <---- ŠIS IR LINKS UZ CSS FAILU */
 </head>
@@ -25,7 +37,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Me</a>
+      <a class="navbar-brand" href="#">Margers Liepins</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -48,37 +60,37 @@
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">Kas ir &lt;span&gt; un kā to pielieto?</h3>
-  <p> &lt;span&gt; ir tags, ko izmanto, lai pievienotu <span style="color: #aef3eb">krāsu </span> teksta daļai </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a><br>
+  <p> &lt;span&gt; ir tags, ko izmanto, lai pievienotu <span style="color: #aef3eb">krāsu </span> teksta daļai </p> 
+  <br>
   <button style="color: #2f2f2f" onclick="window.location.href='https://www.w3schools.com/tags/tag_span.asp';"> Info par span </button>
 </div>
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-5 text-center">
-    <h3 class="margin">Kas ir &lt; &gt; un kā tos pielieto?</h3>
-  <p> &lt; &gt; Ir simboli, kurus izmanto, lai izsauktu visus tagus html valodā </p>
+    <h3 class="margin">Kas ir &lt;&gt; un kā tos pielieto?</h3>
+  <p> &lt;&gt; Ir simboli, kurus izmanto, lai izsauktu visus tagus html valodā </p>
   <button onclick="window.location.href='https://www.w3schools.com/html/html_entities.asp';"> Info par &lt;&gt; </button>
 </div>
 
 
 <!-- Fourth Container -->
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">CSS triki!</h3><br>
+  <h1  class="margin">CSS triki!</h1><br>
   <div class="row">
     <div class="col-sm-4">
         <h1>hover</h1>
-      <p>Izmantojot :hover rīku, objekti reaģē, kad uz tiem novieto kursoru. <br>Info <a href="https://www.w3schools.com/csSref/sel_hover.asp">šeit</a></p>
-      <img src="images/hover.png" class="image" style="width:100%" alt="Image">
+        <p>Izmantojot <span style="color: red">:hover</span> rīku, objekti reaģē, kad uz tiem novieto kursoru. <br>Info <a style="color:#1abc9c" href="https://www.w3schools.com/csSref/sel_hover.asp">šeit</a></p>
+      <img src="images/hover.png" class="virsu" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image" >
+        <h1>animation</h1> 
+              <p><span style="color: red">animation</span> ir īpašība, kas ļauj elementiem pāriet no viena stāvkoļa uz citu. <br>Info <a style="color:#1abc9c" href="https://www.w3schools.com/css/css3_animations.asp">šeit</a> <br> </p>
+      <img src="images/animacija.png" class="animacija" style="width:100%" alt="Image" >
     </div>
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        <h1>filter</h1>
+        <p><span style="color: red">filter</span> īpašība definē vizuālos efektus elementiem (piemērā <i>saturate</i>).<br>Info <a style="color: #1abc9c;" href="https://www.w3schools.com/cssref/css3_pr_filter.asp">šeit</a></p>
+      <img src="images/filtrs.png" class="filtrs" style="width:100%" alt="Image">
     </div>
   </div>
 </div>

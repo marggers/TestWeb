@@ -24,6 +24,11 @@ body {
   .bg-4 { 
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
+    
+  }
+  @keyframes animacijas{
+      from{border: 5px solid red}
+      to{border: 5px solid yellow}
   }
   .container-fluid {
     padding-top: 70px;
