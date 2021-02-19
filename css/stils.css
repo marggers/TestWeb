@@ -23,8 +23,15 @@ body {
   }
   .bg-4 { 
     background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-    
+    color: #fff; 
+  }
+  .sticky{
+      position: fixed;
+      top: 0;
+      width: 100%;
+  }
+  .sticky + .content{
+      padding-top: 60px;
   }
   @keyframes animacijas{
       from{border: 5px solid red}
