@@ -9,18 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script> 
-      window.onscroll = function() (myFunction());
-      var navbar = document.getElementByClassName("navbar");
-      var sticky = navbar.offsetTop;
-      function myFuncion(){
-          if(window.pageYOffset >= sticky){
-              navbar.classList.add("sticky");
-          }else{
-              navbar.classList.remove("sticky");
-          }
-    }              
-  </script>
+  <script src="script/myScript.js"> </script>
   <style>
       .virsu:hover {border: 7px solid red;}
       .animacija:hover{
@@ -36,12 +25,12 @@
       100%{border: 7px solid yellow;}
   }
           </style>
-  <link rel="stylesheet" href="css/stils.css"> /* <---- ŠIS IR LINKS UZ CSS FAILU */
+  <link rel="stylesheet" href="css/stils.css"> <!-- ŠIS IR LINKS UZ CSS FAILU --->
 </head>
 <body>
 
 <!-- Navbar zoozoo --->
-<nav class="navbar navbar-default">
+<nav class="navbar sticky navbar-default">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -62,6 +51,7 @@
   </div>
 </nav>
 
+<div class="content">
 <!-- First Container -->
 <div id="div" class="container-fluid bg-1 text-center">
     <h3  class="margin" style="font-weight: 700">Kas ir &lt;div&gt; un kā to pielieto ?</h3>
@@ -107,7 +97,7 @@
     </div>
   </div>
 </div>
-
+</div>
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
