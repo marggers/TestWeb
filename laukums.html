@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Atminas spele</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        </style>
+        <link rel="stylesheet" href="css/atmina.css" >
+    <script>
+      function izveidoLaukumu(){
+         
+         var n = skaits.value;
+         var platums = document.getElementById("lielais");
+         platums.style.width = `${n*100 + n*10}px`;
+         
+         for(var i = 0; i<n*n; i++){
+           //  console.log(i);
+             let divs = document.createElement('div');
+             divs.id = 'karts'+i;
+             divs.setAttribute("class",'aizmugure');
+             divs.innerHTML = i+1;
+             console.log(divs);
+             document.getElementById("lielais").appendChild(divs);
+         }
+         
+      }
+        </script>
+    </head>
+    <body >
+        <form class="basic">
+            <label for="skaits">Izvēlies rindu un kolonnu skaitu:</label><br>
+            <input value="4" type="number" id="skaits" name="skaits" min="1" max ="5" >
+            <input type="button" onclick="izveidoLaukumu()" value="Izveidot laukumu">
+  </form>
+        <div id="lielais" class="lielais">
+            
+        </div>
+              
+        </body>
+</html>
